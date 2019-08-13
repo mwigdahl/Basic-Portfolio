@@ -1,86 +1,67 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+  ========================================
+  Global
+  ========================================
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-    margin-left:40px;
+html, body {
+    background-image: url('../images/background.png');
+    color: #777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.5em;
+    height:100%;
+    margin-bottom:100px;
 }
 
+.clearfix::after {
+    content: "";
+    display: block;
+    clear:both;
+   }
 
-blockquote, q {
-	quotes: none;
+h1, h2 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color:#4aaaa5;
+    font-size: 30px;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+a {
+    text-decoration: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin:10px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0px;
 }
 
 /*
   ========================================
-  Grid
+  Layout
   ========================================
 */
 
-body {
-    background-image: url('background.png');
-    color: #777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    line-height: 1.5em;
-}
+/* ===  Header Region === */
 
-.container {
-    width: 920px;
-    margin:auto;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    margin-top:40px;
-    padding:20px;
-}
-
-.top {
+header {
     background-color: #fff;
     border-bottom: 4px solid #ccc;
     width:100%;
     height:100px;
+    position: relative;
 }
 
-header {
-    display: block;
-    position: relative;
+.contain {
+    margin: auto;
+    width: 960px;
+    box-sizing: border-box;
 }
 
 .logo a {
@@ -99,6 +80,8 @@ header {
     text-decoration: none;
     background-color: #666;
 }
+
+/* ===  Navigation Region === */
 
 nav {
     display: block;
@@ -123,58 +106,68 @@ nav a#last {
     border-right:0px;
 }
 
-section {
-    margin: auto;
+
+/* ===  Content Region === */
+
+.container {
+    margin:auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-top:40px;
+    padding:20px;
     width: 960px;
+    min-height:100%;
 }
 
 .main {
-    display:inline-block;
+
 }
 
-.bottom {
+.content {
+    
+}
+
+
+/* ===  Footer Region === */
+
+#push {
+    height:50px;
+}
+
+footer {
     background-color: #666;
     border-top: 8px solid #4aaaa5;
     width:100%;
-    position: fixed;
     bottom:0;
     height:100px;
     color:#ccc;
 }
 
-.bottom p{
+footer p{
     text-align: center;
     padding:20px;
 }
 
 
-
 /*
   ========================================
-  Global Attributes
+  Attributes
   ========================================
 */
 
-h1, h2 {
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color:#4aaaa5;
-    font-size: 30px;
+
+.portItem {
+    float: left;
+    padding: 10px;
 }
 
-a {
-    text-decoration: none;
+.portItem a:hover {
+    background-color:#4aaaa5;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-p {
-    margin:10px;
-}
-
-#pics {
-    float:left;
-    padding: 20px 20px 20px 0;
-    width:400px;
+.portItem h3 {
+    width:100%;
+    background-color: #4aaaa5;
+    padding:10px;
 }

@@ -2,38 +2,43 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <title>Matt Wigdahl | Portfolio</title>
     </head>
     <body>
-        <header class="top">
-            <section>
+        <header>
+            <div class="contain">
                 <h1 class="logo">
                     <a href="index.html">Matt Wigdahl</a>
                 </h1>
                 <nav>
-                    <a href="about.html">About</a>
+                    <a href="index.html">About</a>
                     <a href="portfolio.html">Portfolio</a>
                     <a id="last" href="contact.html">Contact</a>
                 </nav>
-            </section>
+            </div>
         </header>
-        <section class="container">
-            <section class="main">
-                <h2>About Me</h2>
-                <p><img id="pics" src="assets/images/matt.jpeg" alt="Matt">My name is Matt Wigdahl and I'm 38 years old.  I'm from Salt Lake City, Utah.  I have two fun-lovin' daugthers and a beautiful (and supportive!) wife, Jane.</p>
-                <p>I like to consider myself a digital nomad who loves to play and explore the nature world.  My hobbies include:<br>
-                    <ul>
-                        <li>Skiing</li>
-                        <li>Biking</li>
-                        <li>Rafting</li>
-                        <li>Hiking/Canyoneering</li>
-                        <li>Flyfishing</li>
-                        <li>Pretty much anything that else that includes adrenline and speed!</li>
-                    </ul>
-                </p>
+        <div class="container clearfix">
+            <section class="content">
+                <section class="main">
+                    <h2>About Me</h2>
+                    <hr/>
+                    <img align="left" src="assets/images/matt.jpeg" alt="Matt">My name is Matt Wigdahl and I'm 38 years old.  I'm from Salt Lake City, Utah.  I have two fun-lovin' daugthers and a beautiful (and supportive!) wife, Jane.</p>
+                    <p>I like to consider myself a digital nomad who loves to play and explore the nature world.  My hobbies include:<br>
+                        <ul>
+                            <li>Skiing</li>
+                            <li>Biking</li>
+                            <li>Rafting</li>
+                            <li>Hiking/Canyoneering</li>
+                            <li>Flyfishing</li>
+                            <li>Pretty much anything that else that includes adrenline and speed!</li>
+                        </ul>
+                    </p>
+                </section>
             </section>
-        </section>
-        <footer class="bottom"><p>Copyright &copy; Matt Wigdahl</p></footer>
+        </div>
+        <div id="push clearfix"></div>
+        <footer id="clearfix"><p>Copyright &copy; Matt Wigdahl</p></footer>
     </body>
 </html>
