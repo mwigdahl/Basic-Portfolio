@@ -105,7 +105,6 @@ nav a#last {
     border-right:0px;
 }
 
-
 /* ===  Content Region === */
 
 .container {
@@ -118,7 +117,6 @@ nav a#last {
     width: 960px;
     min-height:100%;
 }
-
 
 /* ===  Footer Region === */
 
@@ -140,13 +138,11 @@ footer p{
     padding:20px;
 }
 
-
 /*
   ========================================
-  Attributes
+  Portolio
   ========================================
 */
-
 
 .portItem {
     float: left;
@@ -173,7 +169,7 @@ footer p{
 
 /*
   ========================================
-  Form
+  Form Elements
   ========================================
 */
 
